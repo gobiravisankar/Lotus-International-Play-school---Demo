@@ -1,10 +1,5 @@
 /* ========================================
    VOGUEVA - RESPONSIVE STYLES
-   Breakpoints:
-   1200px
-   992px
-   768px
-   576px
 ======================================== */
 
 
@@ -19,6 +14,10 @@
         padding: 100px 5%;
     }
 
+    .container {
+        width: 94%;
+    }
+
     .hero {
         gap: 50px;
     }
@@ -27,10 +26,7 @@
         font-size: 60px;
     }
 
-    .section-header h2 {
-        font-size: 42px;
-    }
-
+    .section-header h2,
     .story h2 {
         font-size: 42px;
     }
@@ -45,10 +41,6 @@
 
     .features {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-grid {
-        gap: 30px;
     }
 
 }
@@ -88,6 +80,11 @@
         order: 2;
     }
 
+    .hero-image img {
+        max-width: 700px;
+        margin: auto;
+    }
+
     .hero p {
         margin-left: auto;
         margin-right: auto;
@@ -116,9 +113,7 @@
 
     .story p {
         max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 35px;
+        margin: 0 auto 35px;
     }
 
     .product-grid {
@@ -134,9 +129,7 @@
     }
 
     .footer-grid {
-
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .newsletter h2 {
@@ -185,28 +178,21 @@
         margin-bottom: 50px;
     }
 
-    .section-header h2 {
-        font-size: 36px;
-    }
-
+    .section-header h2,
     .story h2 {
         font-size: 36px;
     }
 
-    .category-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-    }
-
+    .category-grid,
+    .product-grid,
+    .features,
     .gallery-grid {
         grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        max-width: 500px;
+        margin: auto;
     }
 
     .newsletter {
@@ -225,17 +211,13 @@
     }
 
     .newsletter form {
+
         flex-direction: column;
+
         align-items: center;
     }
 
-    .newsletter input {
-
-        width: 100%;
-
-        max-width: 420px;
-    }
-
+    .newsletter input,
     .newsletter button {
 
         width: 100%;
@@ -273,7 +255,9 @@
     }
 
     .hero-label {
+
         font-size: 12px;
+
         letter-spacing: 1.5px;
     }
 
@@ -298,13 +282,13 @@
         width: 100%;
     }
 
-    .hero-buttons .btn {
+    .hero-buttons .btn,
+    .btn {
+
         width: 100%;
     }
 
     .btn {
-
-        width: 100%;
 
         padding: 14px 20px;
     }
@@ -313,10 +297,7 @@
         font-size: 12px;
     }
 
-    .section-header h2 {
-        font-size: 30px;
-    }
-
+    .section-header h2,
     .story h2 {
         font-size: 30px;
     }
@@ -330,19 +311,22 @@
     }
 
     .product-card img {
-        height: 340px;
-    }
-
-    .category-card img {
         height: 320px;
     }
 
+    .category-card img {
+        height: 280px;
+    }
+
     .gallery-grid img {
-        height: 260px;
+        height: 240px;
     }
 
     .newsletter {
+
         padding: 60px 25px;
+
+        box-sizing: border-box;
     }
 
     .newsletter h2 {
@@ -372,16 +356,15 @@
         font-size: 30px;
     }
 
-    .section-header h2 {
-        font-size: 26px;
-    }
-
+    .section-header h2,
     .story h2 {
         font-size: 26px;
     }
 
     .logo a {
+
         font-size: 20px;
+
         letter-spacing: 2px;
     }
 
@@ -391,6 +374,46 @@
 
     .mobile-menu {
         font-size: 20px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE NAVIGATION
+======================================== */
+
+@media (max-width: 992px) {
+
+    .navbar.mobile-active {
+
+        display: block;
+
+        position: absolute;
+
+        top: 75px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: white;
+
+        padding: 25px;
+
+        box-shadow:
+            0 15px 35px rgba(0,0,0,.08);
+
+        z-index: 999;
+    }
+
+    .navbar.mobile-active ul {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 20px;
     }
 
 }
