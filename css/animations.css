@@ -59,7 +59,7 @@
 
     50% {
         transform:
-            translateY(calc(var(--parallaxY, 0px) - 18px));
+            translateY(calc(var(--parallaxY, 0px) - 12px));
     }
 
     100% {
