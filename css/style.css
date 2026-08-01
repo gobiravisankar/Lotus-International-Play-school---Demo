@@ -821,3 +821,44 @@ footer {
 
     color: var(--gray);
 }
+
+.active-reveal {
+
+    animation: revealUp .8s ease forwards;
+}
+
+@keyframes revealUp {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.active-link {
+
+    color: #ec4899 !important;
+    font-weight: 700;
+}
+
+@keyframes floatCard {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
